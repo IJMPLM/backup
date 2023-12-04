@@ -4,70 +4,95 @@
   <title>Activity 2- Dictionary</title>
 </head>
 <body>
-
-  <dfn><h1>Dictionary</h1></dfn>
-
+  <dfn><h1>Code</h1></dfn>
   <dt>
-    <dl>noun, plural <em>dictionaries</em></dl>
+    <dl><b>noun</b>, plural <em>codes</em></dl>
     <dd>
-
       <ol>
-        <li>a book or digital resource (such as <a href="Dictionary.com">Dictionary.com</a>) containing a selection of words and information about their meanings, pronunciations, etymologies, inflected forms, derived forms, etc., in either the same or another language; lexicon; glossary:</li>
-        <li>a book or digital resource giving information on a particular subject or on a particular class of words, names, or facts, usually arranged alphabetically</li>
+        <li>a system of words, letters, figures, or other symbols substituted for other words, letters, etc., especially for the purposes of secrecy:</li>
+        <li>program instructions:</li>
+        <li>a systematic collection of laws or regulations:</li>
       </ol>
     </dd>
+    <dl><b>verb</b>, third person present <em>codes,</em> past tense <em>coded,</em> past participle <em>coded,</em> present participle <em>coding</em></dl>
+    <dd>
+      <ol>
+        <li>a system of words, letters, figures, or other symbols substituted for other words, letters, etc., especially for the purposes of secrecy:</li>
+        <li>program instructions:</li>
+        <li>a systematic collection of laws or regulations:</li>
+      </ol>
+      <p>From Latin <q>codex</q> meaning <q>manuscript volume</q></p>
+    </dd>
+
   </dt>
-
-  <p>From Latin <q>dictionarium</q> meaning <q>collection of words and phrases</q></p>
-
+  <h4>A sample code:</h4>
   <code>
-    
+    // The text below is written using the following code<br>
+    &lt;p&gt;The following text is &lt;ins&gt;inserted&lt;/ins&gt; and this text is &lt;del&gt;deleted&lt;/del&gt;.&lt;/p&gt;<br>
+    &lt;p&gt;Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; to copy.&lt;/p&gt;<br>
+    // Output:
+    <samp>
+      <p>The following text is <ins>inserted</ins> and this text is <del>deleted</del>.</p>
+      <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
+    </samp>
   </code>
 
-  <p>The following text is <ins>inserted</ins> and this text is <del>deleted</del>.</p>
-
-  <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
-
-  <pre>
-    This is preformatted text.
-    It preserves both spaces and line breaks.
-  </pre>
-
-  <samp>This is sample output from a computer program.</samp>
-
-  <p>The value of <var>x</var> is 42.</p>
-
-  <p>This is a <b>bold</b> text and this is an <em>emphasized</em> text.</p>
+  <dfn><h1>Dictionary</h1></dfn>
+  <dt>
+    <dl><b>noun</b>, plural <em>dictionaries</em></dl>
+    <dd>
+      <ol>
+        <li>a book or digital resource (such as <a href="https://Dictionary.com">Dictionary.com</a>) containing a selection of words and information about their meanings, pronunciations, etymologies, inflected forms, derived forms, etc., in either the same or another language; lexicon; glossary:</li>
+        <li>a book or digital resource giving information on a particular subject or on a particular class of words, names, or facts, usually arranged alphabetically</li>
+      </ol>
+      <p>From Latin <q>dictionarium</q> meaning <q>collection of words and phrases</q></p>
+    </dd>
+  </dt>
+ 
 
   <table border="1">
-    <caption>Sample Table</caption>
+    <caption>Sample Dictionary Entry Format </caption>
     <thead>
       <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
+        <th>Word</th>
+        <th>Part of Speech</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Row 1, Cell 1</td>
-        <td>Row 1, Cell 2</td>
+        <td>Code</td>
+        <td>Noun, Verb</td>
       </tr>
       <tr>
-        <td>Row 2, Cell 1</td>
-        <td>Row 2, Cell 2</td>
+        <td>Dictionary</td>
+        <td>Noun</td>
+      </tr>
+      <tr>
+        <td>Example</td>
+        <td>Noun</td>
       </tr>
     </tbody>
   </table>
 
+<hr>
+<h4>Submit a Word Definition</h4>
   <form action="/submit" method="post">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
+    <label for="word">Word:</label>
+    <input type="text" id="word" name="word" required>
     <br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
+    <label for="partOfSpeech">Part of Speech:</label>
+    <input type="text" id="partOfSpeech" name="partOfSpeech" required>
     <br>
-    <input type="submit" value="Submit">
+    <label for="definition">Definition:</label>
+    <textarea id="definition" name="definition" required></textarea>
+    <br>
+    <input type="submit" value="Add to Dictionary">
   </form>
 
+  <pre>
+    All definitions used in this page were taken from Oxford Languages and Dictionary.com
+                          <a href="https://languages.oup.com/">Oxford Languages</a>         <a href="https://dictionary.com">Dictionary.com</a>
+
+  </pre>
 </body>
 </html>
