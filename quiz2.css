@@ -1,0 +1,47 @@
+/*    */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #3498db, #2c3e50); 
+}
+
+.home {
+    height: 100vh; /* Adjust the height as needed */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+  .background-image {
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the image behind other content */
+}
+
+.box-home {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap or go onto the next line */
+    justify-content: center; /* box behaviour of filling priority */
+}
+.box {
+    width: 250px; /* Set a fixed width for the boxes */
+    height: 150px; /* Set a fixed height for the boxes */
+    background-color: lightblue;
+    opacity: 0.9;
+    border: 1px solid #ccc;
+    margin: 10px;
+
+    display: flex; /* Sets children (box content) flex behaviour */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
