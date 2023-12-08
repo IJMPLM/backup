@@ -1,0 +1,58 @@
+html {
+    background-image: linear-gradient(to bottom,cyan,green);
+    height: 100vh;
+}
+#top {
+    text-align: center;
+    background-color: aqua;
+    border-style: outset;
+    border-image: linear-gradient(to right, #ff0000, #0000ff) 1;
+}
+header{
+    font-family:Nova Square;
+    color:black;
+    border-color:aliceblue;
+}
+header h1 {
+    text-shadow:2px 1px 1px gray;
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap or go onto the next line */
+    justify-content: center; /* box behaviour of filling priority */
+}
+.box {
+    width: 250px; /* Set a fixed width for the boxes */
+    height: 1r50px; /* Set a fixed height for the boxes */
+    background-color: lightblue;
+    border: 1px solid #ccc;
+    margin: 10px;
+
+    display: flex; /* Sets children (box content) flex behaviour */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#start {
+    background-color: green;
+    color: white;
+
+    padding:10px 40px 10px 40px;
+    border-radius: 10px 30px;
+    border-color:aqua;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#start:hover {
+    background-color: #28e878;
+    background-size: 200% 100%; /* Initial background size, doubled */
+    transform: skewx(10deg);
+}
+
+
+
