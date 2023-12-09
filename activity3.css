@@ -44,7 +44,9 @@ h1 {
     max-width:450px;
    
     padding:20px;
+    margin-bottom:30px;
+    margin-left: auto;
+    margin-right: auto;
     border-style:outset;
-    margin:auto;
     outline:burlywood outset 10px;
 }
