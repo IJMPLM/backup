@@ -2,28 +2,37 @@ html {
     background-image: linear-gradient(to bottom,cyan,green);
     height: 100vh;
 }
+
 #top {
     text-align: center;
     background-color: aqua;
     border-style: outset;
     border-image: linear-gradient(to right, #ff0000, #0000ff) 1;
 }
+
 header{
     font-family:Nova Square;
     color:black;
     border-color:aliceblue;
 }
+
 header h1 {
     text-shadow:2px 1px 1px gray;
 }
+
+.box p {
+    text-align: center;
+}
+
 .box-container {
     display: flex;
     flex-wrap: wrap; /* Allow flex items to wrap or go onto the next line */
     justify-content: center; /* box behaviour of filling priority */
 }
+
 .box {
     width: 250px; /* Set a fixed width for the boxes */
-    height: 1r50px; /* Set a fixed height for the boxes */
+    height: 150px; /* Set a fixed height for the boxes */
     background-color: lightblue;
     border: 1px solid #ccc;
     margin: 10px;
@@ -33,6 +42,7 @@ header h1 {
     align-items: center;
     justify-content: center;
 }
+
 #start {
     background-color: green;
     color: white;
@@ -54,5 +64,61 @@ header h1 {
     transform: skewx(10deg);
 }
 
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s ease;
+}
+    
+#logo:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
 
+.tab-list {
+    display: flex;
+    gap: 1px;
+} 
 
+.tab {
+    border-style: solid;
+    border-color:rgb(103, 79, 0);
+    border-width: 2px;
+    padding: 9px;
+    transition: background-color 0.3s; 
+}
+
+.tab:hover {
+    background-color: #ffc107;
+    cursor: pointer; 
+}
+
+.tab:active {
+    background-color: #4caf50;  
+    color: white; 
+}
+
+#enter{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, font-size 0.5s ease;
+}
+    
+#enter:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#enter:active {
+    font-size: 2.5rem;
+}
