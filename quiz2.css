@@ -6,13 +6,13 @@
   position: absolute;
   top: 0;
   left: 0;
+  align-items: baseline;
   z-index: -1;
 }
 
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #3498db, #2c3e50); 
 }

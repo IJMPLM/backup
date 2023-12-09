@@ -1,4 +1,9 @@
 /* Styles for the navigation bar and footer and sections it separates it from the content */
+html {
+  height:100%;
+  margin:0; 
+}
+
 body {
   display: flex;
   flex-direction: column;
